@@ -1,0 +1,15 @@
+#home{
+    display: inline-block
+    overflow:auto;
+    margin:0px 43px;
+    padding-top:20px;
+}
+
+#picture img{
+    float:left;
+    margin-right:40px;
+    border:5px solid #222222;
+}
+
+#presentation{
+}

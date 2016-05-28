@@ -1,0 +1,22 @@
+{% extends 'melvyn_blog/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'style/css/post.css' %}">
+
+    <div id="post">
+        <div id="title-image">
+            <img id="post-img" src="{{ post.image.url }}" class="img-responsive"/>
+            <h1>{{ post.title }}</h1>
+        </div>
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <div id="description">{{ post.description|linebreaks }}</div>
+        <div id="text">{{ post.text|safe|linebreaks }}</div>
+        <div id="back">
+            <a class="btn btn-primary" href="/posts">Back to my blog</a>
+        </div>
+    </div>
+{% endblock %}

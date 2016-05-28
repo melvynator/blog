@@ -1,0 +1,48 @@
+{% extends 'melvyn_blog/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'style/css/posts.css' %}">
+
+<div id="postsContainer">
+    <div id="posts">
+        {% for post in posts %}
+        <div>
+            <div id="article">
+                <img src="{{ post.image.url }}" class="img-responsive"/>
+                <h1><a href="{% url 'post' pk=post.pk %}">{{ post.title }}</a></h1>
+            </div>
+            <div id="description">
+                <p>{{ post.description|safe|linebreaks }}</p>
+                <div id="button">
+                    <a class="btn btn-primary" href="{% url 'post' pk=post.pk %}">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="top-divider"></div>
+        {% endfor %}
+    </div>
+    <div class="text-center" id="pageSwitcher">
+        <nav>
+          <ul class="pagination">
+            {% if posts.has_previous %}
+            <li>
+                <a href="?page={{posts.previous_page_number}}">Prev</a>
+            </li>
+            {% endif %}
+            {% for page in posts.paginator.page_range%}
+              {% if page == posts.number %}
+                <li class="active"><a href="#">{{posts.number}} <span class="sr-only">(current)</span></a></li>
+              {%else%}
+              <li><a href="?page={{page}}">{{page}}</a></li>
+              {% endif %}
+            {% endfor %}
+            {% if posts.has_next %}
+            <li>
+                <a href="?page={{posts.next_page_number}}">Next</a>
+            </li>
+            {% endif %}
+          </ul>
+        </nav>
+    </div>
+</div>
+{% endblock %}

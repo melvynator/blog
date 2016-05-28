@@ -1,12 +1,14 @@
 from django.db import models
 from django.utils import timezone
+from tinymce.models import HTMLField
 
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
-    co_author = models.CharField(max_length=20)
+    image = models.ImageField(upload_to="illustrations")
     title = models.CharField(max_length=200)
-    text = models.TextField()
+    description = models.TextField()
+    text = HTMLField()
     created_date = models.DateTimeField(
             default=timezone.now)
     published_date = models.DateTimeField(

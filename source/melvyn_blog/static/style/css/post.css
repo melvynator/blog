@@ -1,0 +1,32 @@
+#post{margin:0px 43px; padding-top:20;}
+
+
+#post-img{
+    width: 60%;
+    height:40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+h1{
+    text-align: center;
+}
+
+#back{
+    text-align: center;
+}
+
+#description{
+    margin:0px 7%; padding-top:20;
+}
+
+#text{
+    margin:0px 7%; padding-top:20;
+}
+
+.date{
+    margin:0px 7%;
+    margin-top:2%;
+    margin-bottom:3%;
+}

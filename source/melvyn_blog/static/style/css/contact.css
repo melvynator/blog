@@ -1,0 +1,106 @@
+/****************************************************/
+/* contact SECTION */
+/****************************************************/
+#contactElement li{
+	list-style:none;
+	padding-left: 30px;
+	padding-top: 3px;
+	margin:0 0 5px 0;
+}
+
+#contact{margin:0px 43px;}
+
+#contact .content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    height: 70%;
+ }
+#contact #form{
+	width:410px;
+	float:left;
+}
+#contact #form span{
+	display:block;
+	float:left;
+	width:100px;
+	padding-top:5px;
+	font: 400 14px/16px 'Bree Serif', Georgia, serif;
+}
+#contact #form input{
+	float:left;
+	width:255px;
+	border:0px;
+	color:#FFFFFF;
+	padding:10px 10px 10px 30px;
+	font: 400 11px/20px 'Open Sans', Verdana, Helvetica, sans-serif;
+	margin-bottom:10px;
+}
+#contact #form textarea{
+	float:left;
+	border:0px;
+	width:255px;
+	height:100px;
+	padding:10px 10px 10px 30px;
+	font: 400 11px/20px 'Open Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+}
+
+#contact #form input.name{background:#524B4B url(../../img/icon-user.png) no-repeat 10px 8px;}
+#contact #form input.email{background:#524B4B url(../../img/icon-mail.png) no-repeat 10px 9px;}
+#contact #form textarea.message{background:#524B4B url(../../img/icon-message.png) no-repeat 10px 8px;}
+#contact #form input.submit{
+	width:75px;
+	height:30px;
+	float:right;
+	padding:0px 0px 5px 0px;
+	margin:10px 16px 0px 0px;
+	background:#524B4B;
+	color:#FFFFFF;
+	font: 400 14px/16px 'Bree Serif', Georgia, serif;
+}
+
+.cvDownload {
+	padding:0px 0px 5px 0px;
+	margin:10px 16px 0px 0px;
+	background:#524B4B;
+	color:#FFFFFF;
+	font: 400 12px/14px 'Bree Serif', Georgia, serif;
+}
+
+#contact #social-footer{
+	width:300px;
+	float:left;
+	margin-left:75px;
+}
+#contact #social-footer #sm-links{margin-top:25px;}
+#contact #social-footer #sm-links li{
+	list-style:none;
+	float:left;
+}
+#contact #social-footer #sm-links li a{
+	display:block;
+	text-indent:-9999px;
+	width:26px;
+	height:26px;
+	margin-right:10px;
+}
+#contact #social-footer #sm-links li a.facebook{background:url(../../img/sm-facebook-icon.png) no-repeat;}
+#contact #social-footer #sm-links li a.github{background:url(../../img/github-logo.png) no-repeat; width:31px;}
+#contact #social-footer #sm-links li a.dribble{background:url(../../img/sm-dribble-icon.png) no-repeat;}
+#contact #social-footer #sm-links li a.vimeo{background:url(../../img/sm-vimeo-icon.png) no-repeat; width:27px;}
+#contact #social-footer #sm-links li a.google{background:url(../../img/sm-google-icon.png) no-repeat;}
+#contact #social-footer #sm-links li a.youtube{background:url(../../img/sm-youtube-icon.png) no-repeat; width:28px;}
+#contact #social-footer #sm-links li a.linkedin{background:url(../../img/sm-linkedin-icon.png) no-repeat;}
+
+.content > section { width: 100%; height: 100%; }
+
+#social-footer #socialNetwork{
+	float:left;
+	margin-bottom: 20px;
+}
+
+#social-footer #socialContact{
+	float:left;
+	clear:left;
+}

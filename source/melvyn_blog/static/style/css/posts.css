@@ -1,0 +1,52 @@
+#posts h1 a{
+    font: 400 42px/44px 'Bree Serif', Georgia, serif;
+    color:#6a6969;
+    text-align: right;
+}
+
+#article h1{
+    text-align: center;
+}
+
+#article img{
+    width: 60%;
+    height:40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#posts{margin:0px 43px; padding-top:20;}
+
+#posts #description{margin:0px 160px; padding-top:20;}
+
+
+#pageSwitcher nav{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.pagination>li.active>a {
+  background: #524B4B;
+  color: #FFFFFF;
+  border-color: #000000;
+}
+
+.pagination>li>a {
+  background: #AAAAAA;
+  color: #FFFFFF;
+
+}
+
+.pagination>li.active>a:hover {
+  background-color: #635C5C;
+  border-color: #635C5C;
+  color: #FFFFFF;
+}
+
+.pagination>li>a:hover {
+  background-color: #635C5C;
+  border-color: #635C5C;
+  color: #FFFFFF;
+}
