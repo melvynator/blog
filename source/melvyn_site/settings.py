@@ -127,6 +127,8 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 TINYMCE_DEFAULT_CONFIG = {
+    'remove_linebreaks' : "true",
+    'fix_table_elements': 'true',
     'plugins': "table,xhtmlxtras,paste,searchreplace",
     'theme': "advanced",
     "theme_advanced_buttons3_add" : "cite,abbr",

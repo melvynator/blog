@@ -18,15 +18,22 @@ h1{
 }
 
 #description{
-    margin:0px 7%; padding-top:20;
+    margin:0px 15%; padding-top:20;
 }
 
 #text{
-    margin:0px 7%; padding-top:20;
+    margin:0px 15%; padding-top:20;
 }
 
 .date{
-    margin:0px 7%;
+    margin:0px 15%;
     margin-top:2%;
     margin-bottom:3%;
+}
+
+body{
+	background:#E9E6E6;
+	margin:0px;
+	font: 400 16px/26px 'Open Sans', Verdana, Helvetica, sans-serif;
+	color:#6a6969;
 }
