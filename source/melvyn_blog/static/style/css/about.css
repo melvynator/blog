@@ -55,36 +55,47 @@
 /****************************************************/
 /* EXPERIENCE SECTION */
 /****************************************************/
-
 #education{margin:0px 43px; padding-top:115px;}
+
+.block {
+    width: 80%;
+    margin: 0 auto;
+    text-align:center;
+}
+
 #education .col{
-	width:235px;
+    display:inline-block;
+	width:30%;
 	float:left;
+	margin-left: 0;
+    margin-right: 3%;
 }
-#education .content{
-    width: 72%;
-    height: 72%;
-    margin-left: auto;
-    margin-right: auto;
+
+#education .col-right{
+    display:inline-block;
+    width:30%;
+	margin-left: 0;
+    margin-right: 0;
 }
-#education .col-mid{margin:0px 65px;}
 
 /****************************************************/
 /* WORK SECTION */
 /****************************************************/
 #experience{margin:0px 43px; padding-top:115px;}
 #experience .col{
-	width:235px;
+    display:inline-block;
+	width:30%;
 	float:left;
-}
-#experience .content{
-    width: 72%;
-    height: 72%;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: 0;
+    margin-right: 3%;
 }
 
-#experience .col-mid{margin:0px 65px;}
+#experience .col-right{
+    display:inline-block;
+    width:30%;
+	margin-left: 0;
+    margin-right: 0;
+}
 
 
 /****************************************************/
