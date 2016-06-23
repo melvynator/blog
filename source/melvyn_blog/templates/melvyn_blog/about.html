@@ -1,8 +1,8 @@
 {% extends 'melvyn_blog/base.html' %}
 {% block content %}
 {% load staticfiles %}
-<link rel='stylesheet' href="{% static 'style/css/about.css' %}">
 <script type='text/javascript' href="{% static 'js/chart.js' %}"></script>
+<link rel='stylesheet' href="{% static 'style/css/about.css' %}">
 
 
 
@@ -107,7 +107,7 @@
                     </div>
 
                     <div class="col">
-                        <h2>School project for Askia survey</h2>
+                        <h2>School project for Askia software for survey</h2>
                         <h3 class="date">September 2014 - April 2015</h3>
                         <div class="corporationLogo">
                             <img class="logo" src="{% static 'img/askia.png' %}"/>
@@ -123,27 +123,56 @@
 	<section id="personalWork">
 		<h1>Personal work</h1>
 			<div class="top-divider"></div>
-				<div class="content">
-					<div class="col">
-					</div>
-					<div class="col col-mid">
-					</div>
-					<div class="col">
-					</div>
-				</div>
-			<div class="bottom-divider"></div>
+            <div class="content">
+                <div class="block">
+                    <div class="col">
+                        <h2>My personal blog</h2>
+                        <h3 class="date">2016-20??</h3>
+                        <h3><a href="https://github.com/melvynator/blog">My blog</a></h3>
+                        <div class="corporationLogo">
+                            <img class="logo" src="{% static 'img/blog.png' %}"/>
+                        </div>
+                        <p>My first blog about data science and Technology. I developped it using Django</p>
+                    </div>
+
+                    <div class="col">
+                        <h2>How to kaggle using Elasticsearch</h2>
+                        <h3 class="date">Mai 2016- Juin 2016</h3>
+                        <h3><a href ='https://github.com/melvynator/how_2_kaggle_es'>University of Cergy</a></h3>
+                        <div class="corporationLogo">
+                            <img class="logo" src="{% static 'img/h2ces.png' %}"/>
+                        </div>
+                        <p>I worked on a Kaggle using Elasticsearch. The objectif was to developed a supervised algorithm to predict the origin of a recipe.</p>
+                    </div>
+
+                    <div class="col-right">
+                        <h2>Currency arbitrage</h2>
+                        <h3 class="date">Septembre 2015- Octobre 2015</h3>
+                        <h3><a href ='https://github.com/CurrencyArbitrageTeam/currencyArbitrage'>Institution Rey</a></h3>
+                        <div class="corporationLogo">
+                            <img class="logo" src="{% static 'img/currency_arbitrage.png' %}"/>
+                        </div>
+                        <p>Romain Geffraye and me worked on currency arbitrage. We wanted to apply different meta-heuristic algorithm to find arbitrage opportunity on the Forex.</p>
+                    </div>
+                </div>
+        </div>
+        <div class="bottom-divider"></div>
 	</section>
 
 <section id="skill">
 	<h1>Skill</h1>
 		<div class="top-divider"></div>
 		<div id="chart">
+            <div id="skillBdd">
+				<div id="BDD"></div>
+			</div>
+
 			<div id="skillDev">
 				<div id="devChart"></div>
 			</div>
 
-			<div id="skillBdd">
-				<div id="BDD"></div>
+            <div id="skillWeb">
+				<div id="devWeb"></div>
 			</div>
 
 			<div id="skillSE">
@@ -152,5 +181,253 @@
 			<div class="bottom-divider"></div>
 		</div>
 </section>
+
+<script>
+    $(function () {
+
+    $(document).ready(function () {
+
+        // Build the chart
+        $('#skillDev').highcharts({
+            colors: ['#7F5E46', '#FFE8D8', '#FFBB8B', '#5E5046', '#CC966F', '#64E572',
+             '#FF9655', '#FFF263', '#6AF9C4'],
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie',
+                backgroundColor:'rgba(255, 255, 255, 0.0)'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            title:{
+                text:'Developpement',
+                floating: true,
+                y: 70,
+                style: {
+                   color: '#6a6969',
+                   font: '400 20px/12px "Bree Serif", Georgia, serif'
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            exporting: {
+              enabled: false
+            },
+            plotOptions: {
+                pie: {
+                    size:100,
+                    allowPointSelect: false,
+                    cursor: 'pointer',
+                    dataLabels: {
+                      style: {
+                        textShadow: false,
+                        color: '#6a6969'
+                      },
+                      distance: 0,
+                      enabled: true
+                    },
+                }
+            },
+            series: [{
+                name: 'Use of the language',
+                colorByPoint: true,
+                data: [{
+                    name: 'Python',
+                    y: 45
+                }, {
+                    name: 'Java',
+                    y: 30
+                }, {
+                    name: 'Javascript',
+                    y: 20
+                }, {
+                    name: 'Others',
+                    y: 5
+                }]
+            }]
+        });
+        $('#skillBdd').highcharts({
+            colors: ['#7F5E46', '#FFE8D8', '#FFBB8B', '#5E5046', '#CC966F', '#64E572',
+             '#FF9655', '#FFF263', '#6AF9C4'],
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie',
+                backgroundColor:'rgba(255, 255, 255, 0.0)'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            title:{
+                text:'Data base',
+                floating: true,
+                y: 70,
+                style: {
+                   color: '#6a6969',
+                   font: '400 20px/12px "Bree Serif", Georgia, serif'
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            exporting: {
+              enabled: false
+            },
+            plotOptions: {
+                pie: {
+                    size:100,
+                    allowPointSelect: false,
+                    cursor: 'pointer',
+                    dataLabels: {
+                      style: {
+                        textShadow: false,
+                        color: '#6a6969'
+                      },
+                      distance: 0,
+                        enabled: true
+                    },
+                }
+            },
+            series: [{
+                name: 'Use of data base',
+                colorByPoint: true,
+                data: [{
+                    name: 'Cassandra',
+                    y: 50
+                }, {
+                    name: 'Mongodb',
+                    y: 30
+                }, {
+                    name: 'Mysql',
+                    y: 15
+                }, {
+                    name: 'Hbase',
+                    y: 5
+                }]
+            }]
+        });
+        $('#skillSE').highcharts({
+            colors: ['#7F5E46', '#FFE8D8', '#FFBB8B', '#5E5046', '#CC966F', '#64E572',
+             '#FF9655', '#FFF263', '#6AF9C4'],
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie',
+                backgroundColor:'rgba(255, 255, 255, 0.0)'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            title:{
+                text:'Search engine',
+                floating: true,
+                y: 70,
+                style: {
+                   color: '#6a6969',
+                   font: '400 20px/12px "Bree Serif", Georgia, serif'
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            exporting: {
+              enabled: false
+            },
+            plotOptions: {
+                pie: {
+                    size:100,
+                    allowPointSelect: false,
+                    cursor: 'pointer',
+                    dataLabels: {
+                      style: {
+                        textShadow: false,
+                        color: '#6a6969'
+                      },
+                      distance: 0,
+                      enabled: true
+                    },
+                }
+            },
+            series: [{
+                name: 'Use of the search engine',
+                colorByPoint: true,
+                data: [{
+                    name: 'ElasticSearch',
+                    y: 80
+                }, {
+                    name: 'SolR',
+                    y: 20
+                }]
+            }]
+        });
+
+        $('#skillWeb').highcharts({
+            colors: ['#7F5E46', '#FFE8D8', '#FFBB8B', '#5E5046', '#CC966F', '#64E572',
+             '#FF9655', '#FFF263', '#6AF9C4'],
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie',
+                backgroundColor:'rgba(255, 255, 255, 0.0)'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            title:{
+                text:'Web',
+                floating: true,
+                y: 70,
+                style: {
+                   color: '#6a6969',
+                   font: '400 20px/12px "Bree Serif", Georgia, serif'
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            exporting: {
+              enabled: false
+            },
+            plotOptions: {
+                pie: {
+                    size:100,
+                    allowPointSelect: false,
+                    cursor: 'pointer',
+                    dataLabels: {
+                      style: {
+                        textShadow: false,
+                        color: '#6a6969'
+                      },
+                      distance: 0,
+                      enabled: true
+                    },
+                }
+            },
+            series: [{
+                name: 'Use of the framework',
+                colorByPoint: true,
+                data: [{
+                    name: 'Web.py',
+                    y: 45
+                },{
+                    name: 'Django',
+                    y: 35
+                },{
+                    name: 'AngularJS',
+                    y: 20
+                }]
+            }]
+        });
+
+    });
+});
+
+</script>
 
 {% endblock %}

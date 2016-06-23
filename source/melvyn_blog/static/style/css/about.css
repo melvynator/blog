@@ -103,12 +103,20 @@
 /****************************************************/
 #personalWork{margin:0px 43px; padding-top:115px;}
 #personalWork .col{
-	width:235px;
+    display:inline-block;
+	width:30%;
 	float:left;
+	margin-left: 0;
+    margin-right: 3%;
 }
 #personalWork .content{overflow:auto;}
-#personalWork .col-mid{margin:0px 65px;}
 
+#personalWork .col-right{
+    display:inline-block;
+    width:30%;
+	margin-left: 0;
+    margin-right: 0;
+}
 /****************************************************/
 /* SKILL SECTION */
 /****************************************************/
@@ -118,7 +126,12 @@
 	float:left;
 }
 #skill .content{overflow:auto;}
-#skill .col-mid{margin:0px 65px;}
+#skill .col-right{
+    display:inline-block;
+    width:30%;
+	margin-left: 0;
+    margin-right: 0;
+}
 
 /****************************************************/
 /* MISC */
@@ -152,15 +165,19 @@
 
 #skillDev {
     float: left;
-    width: 33%;
+    width: 25%;
 }
 #skillBdd {
     float: left;
-    width: 33%;
+    width: 25%;
 }
 #skillSE{
     float: left;
-    width: 33%;
+    width: 25%;
+}
+#skillWeb{
+    float: left;
+    width: 25%;
 }
 
 .active{
