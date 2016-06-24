@@ -1,7 +1,6 @@
 {% extends 'melvyn_blog/base.html' %}
 {% load staticfiles %}
 {% block content %}
-<link rel="stylesheet" href="{% static 'style/css/contact.css' %}">
 
 
 <!--Begin Connect Section-->
@@ -9,17 +8,13 @@
     	<h1>Contact</h1>
         <div class="top-divider"></div>
         	<div class="content">
-            	<div id="form">
-                	<form action="MAILTO:peignonmel@eisti.eu" method="post">
-                    	<span>Name</span>
-                        <input type="text" name="name" class="name" />
-                        <span>Email</span>
-                        <input type="text" name="email" class="email"/>
-                        <span>Message</span>
-                        <textarea class="message"></textarea>
-                        <input type="submit" name="submit" value="Submit" class="submit">
-                    </form>
-                </div>
+
+				<form id="form" role="form" action="" method="post">
+					{% csrf_token %}
+					{{ form.as_p }}
+					<button type="submit" name="submit" value="Submit" class="submit">Submit</button>
+				</form>
+
                 <div id="social-footer">
 									<div id="socialNetwork">
 	                	<h2>Keep in touch!!</h2>
@@ -40,5 +35,7 @@
             </div>
     </section>
 <!--End Connect Section-->
+
+<link rel="stylesheet" href="{% static 'style/css/contact.css' %}">
 
 {% endblock %}

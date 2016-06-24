@@ -126,6 +126,16 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'testing@example.com'
+
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'Melvyn'
+EMAIL_HOST_PASSWORD = 'ErplEck1692MAIL'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 TINYMCE_DEFAULT_CONFIG = {
     'remove_linebreaks' : "true",
     'fix_table_elements': 'true',
