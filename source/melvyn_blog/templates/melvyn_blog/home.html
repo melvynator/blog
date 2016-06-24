@@ -4,23 +4,37 @@
 <link rel="stylesheet" href="{% static 'style/css/home.css' %}">
 
 <div id="home">
-    <h1>
-        Welcome on my blog
-    </h1>
-    <div id="picture">
-        <img src="{% static 'img/melvyn_peignon.jpg' %}"/>
-    </div>
-    <div id="presentation">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra lacus non orci pulvinar, vitae viverra
-        odio consequat. Sed in lorem non diam tincidunt pulvinar vitae et libero. Aliquam erat volutpat. Nunc tempus
-        cursus convallis. Quisque quis luctus lectus, eget malesuada sapien. Mauris egestas pretium dignissim. Sed
-        varius lectus vel ligula interdum mollis. Pellentesque non odio suscipit, tincidunt purus luctus, congue risus.
-        Proin vitae nunc et justo dignissim fermentum eget id sapien. Morbi ut congue arcu.
-        Suspendisse efficitur enim magna, ac iaculis lorem malesuada ac. Proin mattis tortor purus, tristique tristique
-        nunc feugiat vel. Aliquam vel sodales dui, ac posuere odio. Nulla viverra eleifend vulputate. Nam tristique
-        ultrices rhoncus. Aenean hendrerit venenatis odio imperdiet bibendum. Fusce eu ipsum vitae lectus suscipit
-        dignissim. Quisque ornare turpis vitae nunc hendrerit lacinia. Curabitur non vestibulum justo, a faucibus orci.
-        Nulla vitae neque vestibulum, sagittis elit nec, mollis arcu.
+    <section class="module parallax parallax-1">
+        <div class="container"></div>
+    </section>
+
+    <div class="block">
+        <a href="/posts" class="icon">
+        <div class="col">
+            <div class="corporationLogo">
+                <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+            </div>
+            <h2>My blog</h2>
+        </div>
+        </a>
+        <a href="/about" class="icon">
+        <div class="col">
+            <div class="corporationLogo">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            </div>
+            <h2>About me</h2>
+        </div>
+        </a>
+        <a href="/contact" class="icon">
+            <div class="col-right">
+            <div class="corporationLogo">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+            </div>
+            <h2>Contact</h2>
+        </div>
+        </a>
     </div>
 </div>
+
+
 {% endblock %}
