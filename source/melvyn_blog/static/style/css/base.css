@@ -33,6 +33,11 @@ a img{border:0px;}
     position: fixed;
 }
 
+#blog-logo{
+    float: left;
+    height: 60px;
+}
+
 #anchor-nav ul {
 	float:right; padding-top:25px;
 }

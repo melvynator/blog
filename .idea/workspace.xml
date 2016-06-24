@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4e4f24a-2601-41a0-bfc2-a9a6634c536a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/melvyn_blog/static/img/home_illustration.dms" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/melvyn_blog/static/style/css/home.css" afterPath="$PROJECT_DIR$/source/melvyn_blog/static/style/css/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/melvyn_blog/static/style/css/base.css" afterPath="$PROJECT_DIR$/source/melvyn_blog/static/style/css/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/melvyn_blog/static/style/css/post.css" afterPath="$PROJECT_DIR$/source/melvyn_blog/static/style/css/post.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/base.html" afterPath="$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/base.html" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,18 +29,28 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="32" />
+            <state relative-caret-position="149">
+              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/style/css/base.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/style/css/post.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="36" column="23" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="23" />
+            <state relative-caret-position="0">
+              <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -47,8 +59,8 @@
       <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+            <state relative-caret-position="150">
+              <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -59,16 +71,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="585">
               <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/style/css/base.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="30" column="29" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -88,13 +90,13 @@
         <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/style/css/posts.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/style/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -129,20 +131,20 @@
         <option value="$PROJECT_DIR$/source/melvyn_blog/models.py" />
         <option value="$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/posts.html" />
         <option value="$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/post.html" />
-        <option value="$PROJECT_DIR$/source/melvyn_blog/static/style/css/post.css" />
         <option value="$PROJECT_DIR$/source/melvyn_blog/templates/contact_template.txt" />
         <option value="$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/contact.html" />
         <option value="$PROJECT_DIR$/source/melvyn_blog/forms.py" />
         <option value="$PROJECT_DIR$/source/melvyn_site/settings.py" />
         <option value="$PROJECT_DIR$/source/melvyn_blog/views.py" />
-        <option value="$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/base.html" />
         <option value="$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/about.html" />
-        <option value="$PROJECT_DIR$/source/melvyn_blog/static/style/css/base.css" />
         <option value="$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/home.html" />
         <option value="$PROJECT_DIR$/source/melvyn_blog/static/style/css/about.css" />
         <option value="$PROJECT_DIR$/source/melvyn_blog/static/style/css/contact.css" />
         <option value="$PROJECT_DIR$/source/melvyn_blog/static/style/css/posts.css" />
         <option value="$PROJECT_DIR$/source/melvyn_blog/static/style/css/home.css" />
+        <option value="$PROJECT_DIR$/source/melvyn_blog/static/style/css/base.css" />
+        <option value="$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/base.html" />
+        <option value="$PROJECT_DIR$/source/melvyn_blog/static/style/css/post.css" />
       </list>
     </option>
   </component>
@@ -567,9 +569,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="728" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21842733" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21842733" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -623,14 +625,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/style/css/about.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2175">
@@ -870,46 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/style/css/post.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/style/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/img/h2ces.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -939,10 +893,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/style/css/posts.css">
+    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/img/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/style/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        <state relative-caret-position="345">
+          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
           <folding />
         </state>
       </provider>
@@ -955,10 +914,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/style/css/home.css">
+    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+        <state relative-caret-position="150">
+          <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/style/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/templates/melvyn_blog/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/style/css/posts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/melvyn_blog/static/style/css/post.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
           <folding />
         </state>
       </provider>
