@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
+import token
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -128,7 +129,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 EMAIL_BACKEND = "sgbackend.SendGridBackend"
-SENDGRID_API_KEY = "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"
+SENDGRID_API_KEY = token.mail_token
 
 TINYMCE_DEFAULT_CONFIG = {
     'remove_linebreaks' : "true",
