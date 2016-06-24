@@ -127,14 +127,8 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_FROM_EMAIL = 'testing@example.com'
-
-EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'Melvyn'
-EMAIL_HOST_PASSWORD = 'ErplEck1692MAIL'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+EMAIL_BACKEND = "sgbackend.SendGridBackend"
+SENDGRID_API_KEY = "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"
 
 TINYMCE_DEFAULT_CONFIG = {
     'remove_linebreaks' : "true",

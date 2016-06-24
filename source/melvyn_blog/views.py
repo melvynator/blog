@@ -2,10 +2,10 @@ from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from melvyn_blog.forms import ContactForm
 from django.template.loader import get_template
-from django.core.mail import EmailMessage
 from django.template import Context
 from .models import Post
 from django.core.mail import send_mail
+from django.http import HttpResponseRedirect
 
 
 def posts(request):
@@ -46,16 +46,8 @@ def contact(request):
                 'form_content': form_content,
             })
             content = template.render(context)
-
-            email = EmailMessage(
-                "New contact form submission",
-                content,
-                "Your website" +'',
-                ['youremail@gmail.com'],
-                headers={'Reply-To': contact_email}
-            )
             send_mail(contact_name, content, contact_email, ['peignonmel@eisti.eu'], fail_silently=False)
-            return render(request, 'melvyn_blog/contact.html', {'form': form_class, })
+            return HttpResponseRedirect("#")
 
     return render(request, 'melvyn_blog/contact.html', {'form': form_class, })
 

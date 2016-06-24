@@ -45,6 +45,15 @@
 }
 
 
+#contact #form #id_contact_name{
+    font: 400 11px/20px 'Open Sans', Verdana, Helvetica, sans-serif;
+}
+
+#contact #form #id_contact_email{
+    font: 400 11px/20px 'Open Sans', Verdana, Helvetica, sans-serif;
+}
+
+
 #contact #form button.submit{
 	width:75px;
 	height:30px;
