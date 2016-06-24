@@ -36,7 +36,10 @@
 
 <script>
     $(function() {
-      $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+    console.log(location.pathname);
+    if (location.pathname != '/'){
+          $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+    }
     });
 </script>
 
