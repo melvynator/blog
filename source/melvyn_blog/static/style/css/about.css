@@ -36,7 +36,7 @@
 }
 
 #about .content{overflow:auto;}
-#about .content img{float:left; margin-right:40px; border:5px solid #222222;}
+#about .content img{float:left; margin-right:40px; border:3px solid #222222;}
 #about .content #service-icons{margin-top:20px;}
 #about .content #service-icons li{
 	display:block;
@@ -47,6 +47,11 @@
 	float:left;
 	margin-right:20px;
 }
+
+div #descrition p{
+    text-align:justify;
+}
+
 #about .content #service-icons li.services-design{background:url(../../img/icon-1.png) no-repeat;}
 #about .content #service-icons li.services-mobile{background:url(../../img/icon-2.png) no-repeat;}
 #about .content #service-icons li.services-film{background:url(../../img/icon-3.png) no-repeat;}
@@ -131,6 +136,11 @@
     width:30%;
 	margin-left: 0;
     margin-right: 0;
+}
+
+#about .content{
+    margin-left:7%;
+    margin-right:7%;
 }
 
 /****************************************************/

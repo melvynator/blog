@@ -52,8 +52,6 @@ def contact(request):
     return render(request, 'melvyn_blog/contact.html', {'form': form_class, })
 
 
-
-
 def about(request):
     return render(request, 'melvyn_blog/about.html', {})
 

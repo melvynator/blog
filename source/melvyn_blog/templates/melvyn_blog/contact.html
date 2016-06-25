@@ -9,29 +9,31 @@
         <div class="top-divider"></div>
         	<div class="content">
 
-				<form id="form" role="form" action="" method="post">
-					{% csrf_token %}
-					{{ form.as_p }}
-					<button type="submit" name="submit" value="Submit" class="submit">Submit</button>
-				</form>
+				<div id="message">
+					<form id="form" role="form" action="" method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" name="submit" value="Submit" class="submit">Submit</button>
+				    </form>
+				</div>
 
                 <div id="social-footer">
-									<div id="socialNetwork">
+					<div id="socialNetwork">
 	                	<h2>Keep in touch!!</h2>
 	                    <p>Feel free to add me on LinkedIn (link below) or to sent me a message if you are interested in my profile and want to know more about me.</p>
 	                    <ul id="sm-links">
 	                        <li><a href="https://www.linkedin.com/in/melvyn-peignon-a56b2890?trk=nav_responsive_tab_profile_pic" class="linkedin" target="_blank">LinkedIn</a></li>
-													<li><a href="https://github.com/melvynator" class="github" target="_blank">Github</a></li>
-											</ul>
-									</div>
-									<div id="socialContact">
-										<ul id="contactElement">
-											<li class="mail">peignonmel@eisti.eu</li>
-											<li class="adress">56 rue du chemin vert, Boulogne-billancourt</li>
-											<li class="phone">07.78.19.82.07</li>
-										</ul>
-									</div>
-								</div>
+							<li><a href="https://github.com/melvynator" class="github" target="_blank">Github</a></li>
+						</ul>
+					</div>
+					<div id="socialContact">
+						<ul id="contactElement">
+							<li class="mail">peignonmel@eisti.eu</li>
+							<li class="adress">56 rue du chemin vert, Boulogne-billancourt</li>
+							<li class="phone">07.78.19.82.07</li>
+						</ul>
+					</div>
+				</div>
             </div>
     </section>
 <!--End Connect Section-->
