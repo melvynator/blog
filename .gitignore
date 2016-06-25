@@ -1,4 +1,4 @@
 db.sqlite3
 virtual_env/
 .DS_Store
-melvyn_site/token.py
+token.py

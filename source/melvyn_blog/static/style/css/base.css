@@ -31,6 +31,7 @@ a img{border:0px;}
     background-color: #524B4B;
     padding: 0px 43px;
     position: fixed;
+    background-color: rgba(0,0,0,.5);
 }
 
 #blog-logo{
