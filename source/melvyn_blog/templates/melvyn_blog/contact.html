@@ -16,7 +16,6 @@
                         <button type="submit" name="submit" value="Submit" class="submit" onclick="refresh()">Submit</button>
 				    </form>
 
-
 				</div>
 
                 <div id="social-footer">
@@ -42,9 +41,37 @@
 
 
 <script>
+    function CheckMail(mail) {
+     var filter  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+     if(filter.test(mail)){
+        return true;
+     }
+     else{
+        return false;
+     }
+    }
+
     function refresh(){
-        alert("Thank you for your message. I will answer you ASAP!");
-        location.reload();
+        var checkName = document.getElementById('id_contact_name').value;
+        var checkEmail = document.getElementById('id_contact_email').value;
+        var checkText = document.getElementById('id_content').value;
+
+        if(CheckMail(checkEmail) == true){
+            if(checkName != ""){
+                if(checkText != ""){
+                    alert('Thank you for your message. I will answer ASAP');
+                }
+                else{
+                    alert('Please type a message.');
+                }
+            }
+            else{
+                alert('Please enter a name');
+            }
+        }
+        else{
+            alert('Please enter a correct email address.');
+        }
    }
 </script>
 
