@@ -36,7 +36,7 @@
 }
 
 #about .content{overflow:auto;}
-#about .content img{float:left; margin-right:40px; border:3px solid #222222;}
+#about .content img{float:left; margin-right:40px; border:1px solid #222222;}
 #about .content #service-icons{margin-top:20px;}
 #about .content #service-icons li{
 	display:block;
