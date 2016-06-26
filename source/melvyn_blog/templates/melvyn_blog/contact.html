@@ -2,7 +2,6 @@
 {% load staticfiles %}
 {% block content %}
 
-
 <!--Begin Connect Section-->
     <section id="contact">
     	<h1>Contact</h1>
@@ -10,11 +9,14 @@
         	<div class="content">
 
 				<div id="message">
-					<form id="form" role="form" action="" method="post">
+
+                    <form id="form" role="form" action="" method="post">
                         {% csrf_token %}
                         {{ form.as_p }}
-                        <button type="submit" name="submit" value="Submit" class="submit">Submit</button>
+                        <button type="submit" name="submit" value="Submit" class="submit" onclick="refresh()">Submit</button>
 				    </form>
+
+
 				</div>
 
                 <div id="social-footer">
@@ -38,6 +40,16 @@
     </section>
 <!--End Connect Section-->
 
+
+<script>
+    function refresh(){
+        alert("Thank you for your message. I will answer you ASAP!");
+        location.reload();
+   }
+</script>
+
+
 <link rel="stylesheet" href="{% static 'style/css/contact.css' %}">
+
 
 {% endblock %}
